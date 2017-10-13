@@ -6,6 +6,8 @@ require 'redcarpet'
 require 'rouge'
 require 'rouge/plugins/redcarpet'
 
+require './asm8051'
+
 
 before do
   cache_control :public, :must_revalidate, max_age: 60 if settings.production?
