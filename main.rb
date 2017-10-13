@@ -17,7 +17,7 @@ end
 
 
 before do
-  cache_control :public, :must_revalidate, max_age: 60 if settings.production?
+  # cache_control :public, :must_revalidate, max_age: 60 if settings.production?
 end
 
 not_found do
