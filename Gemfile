@@ -7,3 +7,5 @@ gem 'puma'
 
 gem 'sinatra'
 gem 'haml'
+gem 'redcarpet'
+gem 'rouge'
