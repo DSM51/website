@@ -1,0 +1,26 @@
+!!!html5
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="style.css")
+    %link(rel="stylesheet" type="text/css" href="top.css")
+    %link(rel="stylesheet" type="text/css" href="content.css")
+    %link(rel="stylesheet" type="text/css" href="footer.css")
+
+  %body
+    #container
+      #top
+        #bg
+        #mask
+        #title
+          %h1 Main Title
+          %h2 This is subtitle
+        #logo
+          %a(href='/') DSM51 Guide
+        -# #menu
+        -#   %a(href='#') Posty
+
+      %section#content
+        = yield
+
+      -# #footer
+      -#   hello world

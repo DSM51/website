@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background: black;
+}
+
+#container {
+  background: white;
+  min-width: 640px;
+}
