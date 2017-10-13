@@ -19,6 +19,12 @@ class HTML < Redcarpet::Render::HTML
   include Rouge::Plugins::Redcarpet
 end
 
+
+get '/highlighting.css' do
+  content_type 'text/css'
+  Rouge::Themes::Github.render(:scope => '.highlight')
+end
+
 get '/p/:name' do |name|
   path = File.join 'posts', name + '.md'
   halt 404 unless File.exists? path
