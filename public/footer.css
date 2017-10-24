@@ -1,5 +1,15 @@
 #footer {
-  height: 500px;
-  color: #fff;
-  background: black;
+  background: #f0f3f5;
+  padding: 50px;
+}
+
+#footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #8196a4;
+    font-size: 20px;
+    font-family: "Avenir Next W02 Light", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

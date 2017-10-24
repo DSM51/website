@@ -5,23 +5,12 @@
     %link(rel="stylesheet" type="text/css" href="/top.css")
     %link(rel="stylesheet" type="text/css" href="/content.css")
     %link(rel="stylesheet" type="text/css" href="/footer.css")
-    %link(rel="stylesheet" type="text/css" href="/highlighting.css")
-
-  %body
+    %script(type="text/javascript" src="/script.js")
+  %body(class="#{settings.environment}")
     #container
-      #top
-        #bg
-        #mask
-        #title
-          %h1 Main Title
-          %h2 This is subtitle
-        #logo
-          %a(href='/') DSM51 Guide
-        -# #menu
-        -#   %a(href='#') Posty
+      = haml :header
 
       %section#content
         = yield
 
-      -# #footer
-      -#   hello world
+      = haml :footer
